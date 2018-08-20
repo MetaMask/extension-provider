@@ -21,3 +21,7 @@ const provider = createMetaMaskProvider()
 // Enjoy!
 ```
 
+## Adding additional browser support
+
+Simply add MetaMask's extension ID for that browser's store to [the config file](./config.json).
+
