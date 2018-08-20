@@ -5,10 +5,17 @@ const browser = detect()
 const config = require('./config.json')
 
 module.exports = function createMetaMaskProvider () {
-  let currentMetaMaskId = getMetaMaskId()
-  const metamaskPort = chrome.runtime.connect(currentMetaMaskId)
-  const pluginStream = new PortStream(metamaskPort)
-  const provider = new MetamaskInpageProvider(pluginStream)
+  let provider
+  try {
+    let currentMetaMaskId = getMetaMaskId()
+    const metamaskPort = chrome.runtime.connect(currentMetaMaskId)
+    const pluginStream = new PortStream(metamaskPort)
+    provider = new MetamaskInpageProvider(pluginStream)
+  } catch (e) {
+    console.dir(`fat error `, e)
+    throw e
+  }
+  console.log('returning SOMEthing', provider)
   return provider
 }
 

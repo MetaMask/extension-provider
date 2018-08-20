@@ -1,0 +1,45 @@
+{
+  "name": "web3-tester",
+  "short_name": "web3-tester",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "author": "https://metamask.io",
+  "description": "A demonstration of Metamask integration",
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "windows": "Alt+Shift+M",
+        "mac": "Alt+Shift+M",
+        "chromeos": "Alt+Shift+M",
+        "linux": "Alt+Shift+M"
+      }
+    }
+  },
+  "icons": {
+    "16": "images/icon-16.png",
+    "128": "images/icon-128.png"
+  },
+  "applications": {
+    "gecko": {
+      "id": "webextension@metamask.io"
+    }
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "images/icon-19.png",
+      "38": "images/icon-38.png"
+    },
+    "default_title": "MetaMask",
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+  ],
+  "externally_connectable": {
+    "matches": [
+      "https://metamask.io/*"
+    ],
+    "ids": [
+      "*"
+    ]
+  }
+}
