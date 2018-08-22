@@ -1,6 +1,6 @@
 # MetaMask Extension Provider
 
-A module for providing a MetaMask provider to other WebExtensions.
+A module for providing a MetaMask [provider](https://github.com/ethereum/wiki/wiki/JavaScript-API#web3currentprovider) to other WebExtensions.
 
 The account provided by this provider will be the user's MetaMask account.
 
@@ -11,7 +11,17 @@ Works in:
 - Chrome
 - Firefox
 
+## Installation
+
+Using npm as a package manager:
+
+```
+npm install metamask-extension-provider -S
+```
+
 ## Usage
+
+Using a bundler like browserify:
 
 ```javascript
 const createMetaMaskProvider = require('metamask-extension-provider')
