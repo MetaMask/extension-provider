@@ -1,6 +1,6 @@
 {
   "name": "metamask-extension-provider",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A module for allowing a WebExtension to access the web3 provider from an installed MetaMask instance.",
   "main": "index.js",
   "scripts": {
