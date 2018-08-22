@@ -11,7 +11,7 @@ module.exports = function createMetaMaskProvider () {
     const metamaskPort = chrome.runtime.connect(currentMetaMaskId)
     const pluginStream = new PortStream(metamaskPort)
     provider = new MetamaskInpageProvider(pluginStream)
-  } catch (e) {
+ } catch (e) {
     console.dir(`fat error `, e)
     throw e
   }

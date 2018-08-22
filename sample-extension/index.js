@@ -13,6 +13,13 @@ if (provider) {
   .then((accounts) => {
     renderText(`Detected MetaMask account ${accounts[0]}`)
   })
+
+  provider.on('error', (error) => {
+    if (error && error.includes('lost connection')) {
+      renderText('MetaMask extension not detected.')
+    }
+  })
+
 } else {
   renderText('MetaMask provider not detected.')
 }
