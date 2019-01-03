@@ -49,6 +49,10 @@ You must have `browserify` installed (`npm i -g browserify`).
 
 You can edit the sample file `sample-extension/index.js` and then rebuild the file with `npm run buildSample`.
 
+## Using with a local Development copy of MetaMask
+
+You'll need to edit the method `getMetaMaskId()` to return your local development MetaMask's id. You can get that from your MetaMask console with `chrome.runtime.id`.
+
 ## Current Limitations
 
 
