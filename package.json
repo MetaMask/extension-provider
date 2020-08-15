@@ -3,6 +3,7 @@
   "version": "1.1.1",
   "description": "A module for allowing a WebExtension to access the web3 provider from an installed MetaMask instance.",
   "main": "index.js",
+  "type": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "buildSample": "browserify sample-extension/index.js -o sample-extension/bundle.js"
