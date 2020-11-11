@@ -1,8 +1,9 @@
 {
-  "name": "metamask-extension-provider",
+  "name": "@dimensiondev/metamask-extension-provider",
   "version": "1.1.1",
   "description": "A module for allowing a WebExtension to access the web3 provider from an installed MetaMask instance.",
   "main": "index.js",
+  "type": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "buildSample": "browserify sample-extension/index.js -o sample-extension/bundle.js"
@@ -25,7 +26,7 @@
   "dependencies": {
     "detect-browser": "^3.0.0",
     "extension-port-stream": "^1.0.0",
-    "metamask-inpage-provider": "^1.1.0"
+    "@metamask/inpage-provider": "^7.0.0"
   },
   "devDependencies": {
     "ethjs": "^0.4.0"
