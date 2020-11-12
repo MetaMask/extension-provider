@@ -12,10 +12,9 @@ module.exports = function createMetaMaskProvider () {
     const pluginStream = new PortStream(metamaskPort)
     provider = new MetaMaskInpageProvider(pluginStream)
  } catch (e) {
-    console.dir(`fat error `, e)
+    console.dir(`Metamask connect error `, e)
     throw e
   }
-  console.log('returning SOMEthing', provider)
   return provider
 }
 
