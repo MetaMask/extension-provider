@@ -1,4 +1,4 @@
-const MetamaskInpageProvider = require('metamask-inpage-provider')
+const { MetaMaskInpageProvider } = require('@metamask/inpage-provider')
 const PortStream = require('extension-port-stream')
 const { detect } = require('detect-browser')
 const browser = detect()
@@ -10,7 +10,7 @@ module.exports = function createMetaMaskProvider () {
     let currentMetaMaskId = getMetaMaskId()
     const metamaskPort = chrome.runtime.connect(currentMetaMaskId)
     const pluginStream = new PortStream(metamaskPort)
-    provider = new MetamaskInpageProvider(pluginStream)
+    provider = new MetaMaskInpageProvider(pluginStream)
  } catch (e) {
     console.dir(`fat error `, e)
     throw e
