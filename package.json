@@ -29,6 +29,7 @@
     "extension-port-stream": "^2.0.0"
   },
   "devDependencies": {
+    "@babel/runtime": "^7.24.5",
     "@metamask/ethjs": "^0.6.0"
   }
 }
