@@ -1,5 +1,5 @@
 const createProvider = require('../')
-const Eth = require('ethjs')
+const Eth = require('@metamask/ethjs')
 
 const provider = createProvider()
 
