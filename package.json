@@ -25,7 +25,7 @@
   "homepage": "https://github.com/danfinlay/metamask-extension-provider#readme",
   "dependencies": {
     "@metamask/inpage-provider": "^8.0.3",
-    "detect-browser": "^3.0.0",
+    "detect-browser": "^5.3.0",
     "extension-port-stream": "^2.0.0"
   },
   "devDependencies": {
