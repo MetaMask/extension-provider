@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "@babel/runtime": "^7.24.5",
-    "@metamask/ethjs": "^0.6.0"
+    "@metamask/ethjs": "^0.6.0",
+    "browserify": "^17.0.0"
   }
 }
