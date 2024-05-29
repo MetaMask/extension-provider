@@ -21,7 +21,7 @@
   },
   "applications": {
     "gecko": {
-      "id": "webextension@metamask.io"
+      "id": "webextension-sample@metamask.io"
     }
   },
   "browser_action": {
