@@ -6,7 +6,7 @@ module.exports={
 
 },{}],2:[function(require,module,exports){
 const { MetaMaskInpageProvider } = require('@metamask/inpage-provider')
-const PortStream = require('extension-port-stream')
+const PortStream = require('extension-port-stream').default
 const { detect } = require('detect-browser')
 const browser = detect()
 const config = require('./config.json')
