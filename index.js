@@ -1,4 +1,4 @@
-const { MetaMaskInpageProvider } = require('@metamask/inpage-provider')
+const { MetaMaskInpageProvider } = require('@metamask/providers')
 const PortStream = require('extension-port-stream').default
 const { detect } = require('detect-browser')
 const browser = detect()
